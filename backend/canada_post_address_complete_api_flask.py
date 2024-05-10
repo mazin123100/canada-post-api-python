@@ -12,7 +12,7 @@ API_URL = "https://ws1.postescanada-canadapost.ca/AddressComplete/Interactive/Fi
 app = Flask(__name__)
 
 
-@app.route('/get_address', methods=['POST'])
+@app.route('/complete_address', methods=['POST'])
 def get_address():
     # Get the address from the request data
     address = request.json.get('address', None)

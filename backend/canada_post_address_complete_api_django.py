@@ -58,3 +58,11 @@ class GetAddressView(View):
         else:
             logging.warning("No address data found.")
             return None
+
+"""
+To use this Django view, you would need to add it to your Django project's URL configuration:
+
+urlpatterns = [
+    path('complete_address/', GetAddressView.as_view(), name='complete_address')
+]
+"""
